@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&family=Kaushan+Script&family=Lato&family=Mulish:wght@300&family=Open+Sans&family=Overpass:wght@100&family=Pacifico&family=Poppins:wght@300&family=Press+Start+2P&family=Roboto:ital,wght@0,400;1,100&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <title>Music_Player</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand">
+               <img src="logo.png" alt="logo" />
+            </li>
+            <li>Home</li>
+            <li>Releases</li>
+            <li>favourite</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container1">
+        <div class="songlist">
+            <div class="carousel">
+                 <img class="carouselimage" src="1.jpg" alt="1">
+            </div>
+            <div class="songinfo">
+             <h1>Ncs_NoCopyRightSound_Playlist</h1>
+             <div class="songitem">
+                <div class="songcomponent"> 
+                 <img src="covers/1.jpg" alt="1" />
+                 <p>Knight</p>
+                 <p class="time">3:42 <Span><i id="1" class="far timeicon fa-2x fa-play-circle"></i></Span></p>
+                </div>
+                <div class="songcomponent"> 
+                    <img src="covers/2.jpg" alt="1" />
+                    <p>Alone-cielo</p>
+                    <p class="time">3:42 <Span><i id="2" class="far timeicon fa-2x fa-play-circle"></i></Span></p>
+                   </div>
+                   <div class="songcomponent"> 
+                    <img src="covers/3.jpg" alt="1" />
+                    <p>In the sunshine_Morningstar</p>
+                    <p class="time">3:42 <Span><i id="3" class="far timeicon fa-2x fa-play-circle"></i></Span></p>
+                   </div>
+                   <div class="songcomponent"> 
+                    <img src="covers/4.jpg" alt="1" />
+                    <p>How Deep </p>
+                    <p class="time">3:42 <Span><i id="4" class="far timeicon fa-2x fa-play-circle"></i></Span></p>
+                   </div>
+                   <div class="songcomponent"> 
+                    <img src="covers/5.jpg" alt="1" />
+                    <p>Can you be my-</p>
+                    <p class="time">3:42 <Span><i id="5" class="far timeicon fa-2x fa-play-circle"></i></Span></p>
+                   </div>
+                   <div class="songcomponent"> 
+                    <img src="covers/6.jpg" alt="1" />
+                    <p>Let me do it </p>
+                    <p class="time">3:42 <Span><i id="6" class="far timeicon fa-2x fa-play-circle"></i></Span></p>
+                   </div>   
+             </div>
+            </div> 
+        </div>
+        <div class="songbanner">
+
+        </div>
+    </div>
+     <div class="bottom">
+         <input type="range" name="range" value="0" min="0" max="100" id="myprogressbar" style="transition: 0.1s ease;"/>
+         <div class="icons">
+            <i id="previous" class="fas fa-2x fa-step-backward"></i>
+            <i class="far fa-2x fa-play-circle" id="maincircleplaybutton"></i>
+            <i id="forward" class="fas fa-2x fa-step-forward"></i>
+         </div>
+        </div>
+        <div class="little_name_on_left_with_image">
+              <img id="playing" src="playing.gif" alt="playing.gif" />
+              <small></small>
+        </div>
+     <script src="three.min.js"></script>
+    <script src="TweenMax.min.js"></script>
+    <script src="hover-effect.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js" integrity="sha512-Aa3UvVB5yhH/dNXMt8nGZDD15Xmntq1ODcavfgT8omSLaomrJKYybWczzc6UJYDUAdqR1hmDJ47V4Ux50PPIuw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js" integrity="sha512-I0VFyPo7hdM7YrEbQ0pvX4bX2904k0+B19u/xBrPrQoMprfcSnIDfGFD8kP52GbAhwtDjkEVhXlQvj8+vkJyew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script>
+         var Animation=new hoverEffect({
+    parent:document.querySelector('.songbanner'),
+    instensity:0.9,
+    image1:'pngegg.png',
+    image2:'pngwing.com (2).png',
+    displacementImage:'4.png'
+    })
+     </script>
+     <script src="script.js"></script>
+</body>
+</html>
